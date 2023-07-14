@@ -1,0 +1,145 @@
+body {
+    background-color: #444654;
+    color: #d1d5d2;
+}
+
+a:link {
+    color: #d1d5d2;
+}
+
+a:visited {
+    color: #dddddd;
+}
+
+.bulletin-board {
+    display: flex;
+    flex-direction: column;
+}
+
+.bulletin-board button {
+    width: 40vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bulletin-board form {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.bulletin-board form input {
+    width: 30vw;
+}
+
+.bulletin-board form textarea {
+    width: 30vw;
+}
+
+.bulletin-board form button {
+    width: 40px;
+}
+
+.bulletin-board input {
+}
+
+.bulletin-board .post {
+    margin-right: auto;
+    margin-left: 2vw;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.post-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-page .content {
+    background-color: #343531;
+    text-align: left;
+    margin-left: 10px;
+    max-width: 50vw;
+    border: 3px solid #dddddd;
+    padding: 15px;
+}
+
+.post-page .title {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.post-page .add-comment {
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.add-comment textarea {
+    width: 30vw;
+    height: 10vh;
+}
+
+.comment {
+    background-color: #343531;
+    text-align: left;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    max-width: 80vw;
+}
+
+.child-comment {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.comment-content {
+    padding: 5px 0;
+}
+
+.comment-reply textarea {
+    width: 30vw;
+    height: 14vh;
+}
+
+button {
+    margin-right: 5px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    background-color: #444654;
+    padding: 20px;
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+    position: relative;
+}
+
+.modal-content .scrollable-content {
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.modal-content button.close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
